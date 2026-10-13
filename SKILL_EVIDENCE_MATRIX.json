@@ -696,6 +696,103 @@
       "verification": null,
       "evidence_date": null,
       "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "RAG",
+      "aliases": [
+        "Retrieval-augmented generation",
+        "RAG"
+      ],
+      "purpose": "Ground generated answers in retrievable evidence; verify retrieval quality, citations and failure cases.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "LangGraph",
+      "aliases": [
+        "LANG GRPAH",
+        "LangGraph"
+      ],
+      "purpose": "Stateful workflow graphs with checkpoints, recoverable execution and human review where the project calls for them.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "LangChain",
+      "aliases": [
+        "LANG CHAIN",
+        "LangChain"
+      ],
+      "purpose": "Actual retrieval/model/tool integrations with evaluations and documented runtime limits.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "Node.js",
+      "aliases": [
+        "Node",
+        "earlier retained profile"
+      ],
+      "purpose": "Previously retained backend runtime; explicit matrix row.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "SQLite",
+      "aliases": [
+        "earlier retained profile"
+      ],
+      "purpose": "Previously retained relational database; explicit matrix row.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "MVC",
+      "aliases": [
+        "Model-view-controller",
+        "earlier retained profile"
+      ],
+      "purpose": "Previously retained application architecture; explicit matrix row.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
+    },
+    {
+      "skill": "Gemini APIs",
+      "aliases": [
+        "Gemini",
+        "earlier retained profile"
+      ],
+      "purpose": "Previously retained model API integration; explicit matrix row.",
+      "status": "coverage_requested_evidence_pending",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Saved coverage target; implementation and source evidence must be verified before claiming use."
     }
   ]
 }
