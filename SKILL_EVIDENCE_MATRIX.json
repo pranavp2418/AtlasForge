@@ -1,0 +1,692 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-13",
+  "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
+  "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
+  "skills": [
+    {
+      "skill": "Debugging",
+      "aliases": [
+        "DeBugging"
+      ],
+      "status": "verified_local_core",
+      "project": "Both",
+      "implementation_files": [
+        "asterledger/core/test/io/atlasforge/ledger/LedgerEngineTest.java",
+        "forgepulse/native/tests.cpp"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "Integration testing",
+      "aliases": [
+        "Integration Testing"
+      ],
+      "status": "verified_local_core",
+      "project": "Both",
+      "implementation_files": [
+        "tools/verify.py"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "Query optimization",
+      "aliases": [
+        "Query Optimization"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Financial data processing",
+      "aliases": [
+        "Financial Data Processin"
+      ],
+      "status": "verified_local_core",
+      "project": "AsterLedger",
+      "implementation_files": [
+        "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "Relational databases / SQL",
+      "aliases": [
+        "Relational Databases",
+        "dATABASES",
+        "SQL"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Infrastructure",
+      "aliases": [
+        "iNFRATSTURE"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Automation",
+      "aliases": [
+        "Automation"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Containerization",
+      "aliases": [
+        "COntainerization"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Automated deployment",
+      "aliases": [
+        "Automoated Deployment"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Git",
+      "aliases": [
+        "Git"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "CI/CD",
+      "aliases": [
+        "CI/CD pIPLEINES",
+        "CI/CD",
+        "DevOps & CI/CD"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Jenkins",
+      "aliases": [
+        "Jenkins"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "DevOps",
+      "aliases": [
+        "DevOps & CI/CD"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "OpenAI APIs",
+      "aliases": [
+        "Open AI APIS"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "LLMs",
+      "aliases": [
+        "LLMs"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Generative AI",
+      "aliases": [
+        "GenAI"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Predictive analysis",
+      "aliases": [
+        "Predictive Analysis"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Data transformation",
+      "aliases": [
+        "Data Transformation"
+      ],
+      "status": "verified_local_core",
+      "project": "ForgePulse",
+      "implementation_files": [
+        "forgepulse/native/telemetry.cpp"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "JSON",
+      "aliases": [
+        "JSON"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "APIs",
+      "aliases": [
+        "API",
+        "REST"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Apache Kafka",
+      "aliases": [
+        "Apche Kafka"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Cloud-native development",
+      "aliases": [
+        "Cloud-Native Dev"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Kubernetes",
+      "aliases": [
+        "Kubernetes"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Docker",
+      "aliases": [
+        "Docker"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "AWS Lambda",
+      "aliases": [
+        "AWS Lambda",
+        "AWS LAMBDA"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Amazon S3",
+      "aliases": [
+        "AmazonS3"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "AWS CloudWatch",
+      "aliases": [
+        "AWS CloudWatch"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "AWS",
+      "aliases": [
+        "AWS"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Responsive UI development",
+      "aliases": [
+        "Responsive UI Development"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Responsive web design",
+      "aliases": [
+        "Respolnsive Web Design"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "CSS",
+      "aliases": [
+        "CSS"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "HTML5",
+      "aliases": [
+        "HTML5",
+        "HTML"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Angular",
+      "aliases": [
+        "ANgular"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "React",
+      "aliases": [
+        "React"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Front-end development",
+      "aliases": [
+        "React.Front-End"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Object-oriented design",
+      "aliases": [
+        "Oject Orited Design"
+      ],
+      "status": "verified_local_core",
+      "project": "AsterLedger",
+      "implementation_files": [
+        "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "Event-driven architecture",
+      "aliases": [
+        "Event-driven"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Distributed systems",
+      "aliases": [
+        "Distributed Systems"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Express.js",
+      "aliases": [
+        "Express.js"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Microservices",
+      "aliases": [
+        "Microsevrices"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Spring Boot",
+      "aliases": [
+        "Spring Boot"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "C",
+      "aliases": [
+        "C"
+      ],
+      "status": "verified_local_core",
+      "project": "ForgePulse",
+      "implementation_files": [
+        "forgepulse/native/crc32.c"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "C++",
+      "aliases": [
+        "C++"
+      ],
+      "status": "verified_local_core",
+      "project": "ForgePulse",
+      "implementation_files": [
+        "forgepulse/native/telemetry.cpp"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "Java",
+      "aliases": [
+        "Java"
+      ],
+      "status": "verified_local_core",
+      "project": "AsterLedger",
+      "implementation_files": [
+        "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+      ],
+      "verification": "python3 tools/verify.py",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel only; full product and hosted integration incomplete."
+    },
+    {
+      "skill": "TypeScript",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "JavaScript",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Python",
+      "aliases": [
+        "earlier verified profile"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "C# / ASP.NET Core / EF Core",
+      "aliases": [
+        "earlier supplied profile"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Excel / VBA",
+      "aliases": [
+        "earlier supplied profile"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "PostgreSQL",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "OpenTelemetry / observability",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Terraform / infrastructure as code",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "RBAC / API security",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "Performance profiling / benchmarking",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    },
+    {
+      "skill": "AI evaluation / model lifecycle",
+      "aliases": [
+        "current primary hiring evidence"
+      ],
+      "status": "planned_or_prior_evidence_not_audited",
+      "project": null,
+      "implementation_files": [],
+      "verification": null,
+      "evidence_date": null,
+      "limits": "Do not claim until the real capability/integration has been verified."
+    }
+  ]
+}

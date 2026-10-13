@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "target_release": "2026-11-30",
+  "timezone": "America/Chicago",
+  "updated": "2026-10-13",
+  "counted_daily_projects": false,
+  "projects": [
+    {
+      "name": "AsterLedger",
+      "path": "asterledger",
+      "status": "foundation_verified",
+      "completed_gates": [
+        "M0"
+      ],
+      "next_gate": "M1",
+      "tests": {
+        "assertions_passed": 2098,
+        "concurrent_replays": 80,
+        "balance_oracle_steps": 1000
+      },
+      "remaining": "PostgreSQL persistence, auth, API, Kafka, operator workflows, query/performance evidence, cloud/CI and release.",
+      "deployed": false
+    },
+    {
+      "name": "ForgePulse",
+      "path": "forgepulse",
+      "status": "foundation_verified",
+      "completed_gates": [
+        "M0"
+      ],
+      "next_gate": "M1",
+      "tests": {
+        "assertions_passed": 3769,
+        "independent_wire_frames": 100,
+        "one_bit_corruption_rejections": 224,
+        "truncated_input_rejected": true
+      },
+      "remaining": "Durable telemetry/auth/API, Kafka, operational workflows, evaluated ML/LLM, UI, cloud/CI and release.",
+      "deployed": false
+    }
+  ],
+  "blockers": [
+    {
+      "stage": "local infrastructure integration",
+      "detail": "This starting workspace has no Docker daemon or PostgreSQL CLI. M1 must acquire a free reproducible runtime or report the concrete limitation; no integration is claimed yet."
+    }
+  ],
+  "latest_report": "runs/2026-10-13.md",
+  "automation": {
+    "id": "6ace8b05529481918f7ce0f54898d2bf",
+    "enabled": true,
+    "window": "Morning, approximately 09:00 America/Chicago",
+    "first_scheduled_run": "2026-10-14",
+    "last_scheduled_date": "2026-11-30",
+    "combined_daily_report": "Three Advanced Projects build conversation"
+  }
+}

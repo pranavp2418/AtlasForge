@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+node_modules/
+.build/
+build/
+target/
+dist/
+*.class
+*.o
+.env
+.env.*
+!.env.example
+*.log
