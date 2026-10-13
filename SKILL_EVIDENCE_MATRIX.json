@@ -90,12 +90,15 @@
       "aliases": [
         "Automation"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_ci",
+      "project": "Both",
+      "implementation_files": [
+        ".github/workflows/verify.yml",
+        "tools/verify.py"
+      ],
+      "verification": "https://github.com/pranavp2418/AtlasForge/actions/runs/38458755032",
+      "evidence_date": "2026-10-13",
+      "limits": "Kernel CI verified. Automated service deployment/Jenkins remain planned."
     },
     {
       "skill": "Containerization",
@@ -126,12 +129,15 @@
       "aliases": [
         "Git"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_source_release",
+      "project": "Both",
+      "implementation_files": [
+        "asterledger/",
+        "forgepulse/"
+      ],
+      "verification": "Sequential source commits 07ab10d and 2801d96",
+      "evidence_date": "2026-10-13",
+      "limits": "Initial kernel releases; no full product release yet."
     },
     {
       "skill": "CI/CD",
@@ -140,12 +146,15 @@
         "CI/CD",
         "DevOps & CI/CD"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_ci",
+      "project": "Both",
+      "implementation_files": [
+        ".github/workflows/verify.yml",
+        "tools/verify.py"
+      ],
+      "verification": "https://github.com/pranavp2418/AtlasForge/actions/runs/38458755032",
+      "evidence_date": "2026-10-13",
+      "limits": "Kernel CI verified. Automated service deployment/Jenkins remain planned."
     },
     {
       "skill": "Jenkins",

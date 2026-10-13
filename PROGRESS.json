@@ -19,7 +19,8 @@
         "balance_oracle_steps": 1000
       },
       "remaining": "PostgreSQL persistence, auth, API, Kafka, operator workflows, query/performance evidence, cloud/CI and release.",
-      "deployed": false
+      "deployed": false,
+      "source_commit": "07ab10d585baabaf4812b729b3720e57fe4573b2"
     },
     {
       "name": "ForgePulse",
@@ -36,7 +37,8 @@
         "truncated_input_rejected": true
       },
       "remaining": "Durable telemetry/auth/API, Kafka, operational workflows, evaluated ML/LLM, UI, cloud/CI and release.",
-      "deployed": false
+      "deployed": false,
+      "source_commit": "2801d9604ca130832473d28d56fb35ad05ad182f"
     }
   ],
   "blockers": [
@@ -53,5 +55,10 @@
     "first_scheduled_run": "2026-10-14",
     "last_scheduled_date": "2026-11-30",
     "combined_daily_report": "Three Advanced Projects build conversation"
+  },
+  "ci": {
+    "status": "passed",
+    "run_url": "https://github.com/pranavp2418/AtlasForge/actions/runs/38458755032",
+    "verified_commit": "2801d9604ca130832473d28d56fb35ad05ad182f"
   }
 }
