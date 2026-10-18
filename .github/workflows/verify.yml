@@ -15,3 +15,32 @@ jobs:
           persist-credentials: false
       - name: Build kernels and run independent failure checks
         run: python3 tools/verify.py
+  postgres-storage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:17-alpine@sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust
+          POSTGRES_DB: atlasforge_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d atlasforge_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      ATLASFORGE_JDBC_URL: jdbc:postgresql://127.0.0.1:5432/atlasforge_test
+      ATLASFORGE_PG_DSN: host=127.0.0.1 port=5432 dbname=atlasforge_test user=postgres
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned local database client
+        run: |
+          python3 -m venv .build/venv
+          .build/venv/bin/pip install -r tools/storage-requirements.txt
+      - name: Verify both real storage boundaries and process recovery
+        run: .build/venv/bin/python tools/verify_storage.py

@@ -1,0 +1,17 @@
+PostgreSQL ledger slice passed: 146 checks; 32 concurrent identical posts; 100 independent balance steps; durable replay/reversal/rollback/tenant isolation.
+Ledger process write verified
+Ledger process read verified
+test_concurrent_replay_has_one_acceptance (test_storage.StorageTest.test_concurrent_replay_has_one_acceptance) ... ok
+test_independent_100_frame_roundtrip (test_storage.StorageTest.test_independent_100_frame_roundtrip) ... ok
+test_native_validation_atomic_corruption_and_gap (test_storage.StorageTest.test_native_validation_atomic_corruption_and_gap) ... ok
+test_precommit_failure_and_retry (test_storage.StorageTest.test_precommit_failure_and_retry) ... ok
+test_replay_conflicts_tenants_and_restart (test_storage.StorageTest.test_replay_conflicts_tenants_and_restart) ... ok
+test_stored_corruption_and_signed_bigint_boundary (test_storage.StorageTest.test_stored_corruption_and_signed_bigint_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.264s
+
+OK
+Telemetry process write verified
+Telemetry process read verified
+Both real PostgreSQL slices and separate-process restart probes passed.
