@@ -1,11 +1,12 @@
 {
   "date": "2026-10-17",
-  "status": "implementation_in_progress",
+  "status": "verified_slices_source_pushed_ci_passed",
   "counted_daily_projects": false,
   "lease": {
     "owner": "codex-continuation",
     "acquired_at": "2026-10-18T02:20:28.470039+00:00",
-    "expires_at": "2026-10-18T06:20:28.470039+00:00"
+    "expires_at": "2026-10-18T06:20:28.470039+00:00",
+    "state": "released_after_verified_slices"
   },
   "acceptance": {
     "AsterLedger": [
@@ -23,8 +24,43 @@
       "Invalid/corrupt frames never enter storage"
     ]
   },
-  "completed_slices": [],
+  "completed_slices": [
+    {
+      "project": "AsterLedger",
+      "evidence": "runs/evidence/storage-2026-10-17.txt",
+      "local_and_ci": "passed",
+      "separate_process_restart": "passed",
+      "transport_auth": "pending",
+      "hosted_runtime": "not_deployed",
+      "source_commit": "9a85d4d140a2a6b248b60ac635254975a8551c44",
+      "checks": 146,
+      "concurrent_duplicate_posts": 32,
+      "independent_balance_steps": 100
+    },
+    {
+      "project": "ForgePulse",
+      "evidence": "runs/evidence/storage-2026-10-17.txt",
+      "local_and_ci": "passed",
+      "separate_process_restart": "passed",
+      "transport_auth": "pending",
+      "hosted_runtime": "not_deployed",
+      "source_commit": "ba764289f0454aff26a45f107cb9460534ace7a8",
+      "test_groups": 6,
+      "concurrent_replays": 32,
+      "corruption_cases": 224,
+      "independent_frames": 100
+    }
+  ],
   "limitations": [
     "M1 auth/API and broader gates remain; this is an incremental slice, not a full milestone pass."
-  ]
+  ],
+  "ci": {
+    "status": "passed",
+    "run_url": "https://github.com/pranavp2418/AtlasForge/actions/runs/39089987332",
+    "verified_commit": "ba764289f0454aff26a45f107cb9460534ace7a8",
+    "jobs": [
+      "kernels",
+      "postgres-storage"
+    ]
+  }
 }

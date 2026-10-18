@@ -2,13 +2,13 @@
   "schema_version": 1,
   "target_release": "2026-11-30",
   "timezone": "America/Chicago",
-  "updated": "2026-10-13",
+  "updated": "2026-10-17",
   "counted_daily_projects": false,
   "projects": [
     {
       "name": "AsterLedger",
       "path": "asterledger",
-      "status": "foundation_verified",
+      "status": "M0_verified_M1_storage_slice_verified",
       "completed_gates": [
         "M0"
       ],
@@ -20,12 +20,23 @@
       },
       "remaining": "PostgreSQL persistence, auth, API, Kafka, operator workflows, query/performance evidence, cloud/CI and release.",
       "deployed": false,
-      "source_commit": "07ab10d585baabaf4812b729b3720e57fe4573b2"
+      "source_commit": "07ab10d585baabaf4812b729b3720e57fe4573b2",
+      "storage_slice": {
+        "evidence": "runs/evidence/storage-2026-10-17.txt",
+        "local_and_ci": "passed",
+        "separate_process_restart": "passed",
+        "transport_auth": "pending",
+        "hosted_runtime": "not_deployed",
+        "source_commit": "9a85d4d140a2a6b248b60ac635254975a8551c44",
+        "checks": 146,
+        "concurrent_duplicate_posts": 32,
+        "independent_balance_steps": 100
+      }
     },
     {
       "name": "ForgePulse",
       "path": "forgepulse",
-      "status": "foundation_verified",
+      "status": "M0_verified_M1_storage_slice_verified",
       "completed_gates": [
         "M0"
       ],
@@ -38,27 +49,42 @@
       },
       "remaining": "Durable telemetry/auth/API, Kafka, operational workflows, evaluated ML/LLM, UI, cloud/CI and release.",
       "deployed": false,
-      "source_commit": "2801d9604ca130832473d28d56fb35ad05ad182f"
+      "source_commit": "2801d9604ca130832473d28d56fb35ad05ad182f",
+      "storage_slice": {
+        "evidence": "runs/evidence/storage-2026-10-17.txt",
+        "local_and_ci": "passed",
+        "separate_process_restart": "passed",
+        "transport_auth": "pending",
+        "hosted_runtime": "not_deployed",
+        "source_commit": "ba764289f0454aff26a45f107cb9460534ace7a8",
+        "test_groups": 6,
+        "concurrent_replays": 32,
+        "corruption_cases": 224,
+        "independent_frames": 100
+      }
     }
   ],
   "blockers": [
     {
-      "stage": "local infrastructure integration",
-      "detail": "This starting workspace has no Docker daemon or PostgreSQL CLI. M1 must acquire a free reproducible runtime or report the concrete limitation; no integration is claimed yet."
+      "stage": "M1 service completion",
+      "detail": "No current local Docker/PostgreSQL blocker: both real storage adapters verified locally and in CI. Auth/RBAC, Spring Boot/FastAPI transport and hosted runtime are not implemented or verified yet; later Kafka/UI/cloud gates remain."
     }
   ],
-  "latest_report": "runs/2026-10-13.md",
+  "latest_report": "runs/2026-10-17.md",
   "automation": {
-    "id": "6ace8b05529481918f7ce0f54898d2bf",
-    "enabled": true,
-    "window": "Morning, approximately 09:00 America/Chicago",
-    "first_scheduled_run": "2026-10-14",
+    "status": "source_tasks_paused_at_handoff_destination_not_verified",
+    "source_task_id": "6ace8b05529481918f7ce0f54898d2bf",
+    "timezone": "America/Chicago",
     "last_scheduled_date": "2026-11-30",
-    "combined_daily_report": "Three Advanced Projects build conversation"
+    "note": "Historical enabled field superseded by verified handoff; this source file is not an active Codex schedule."
   },
   "ci": {
     "status": "passed",
-    "run_url": "https://github.com/pranavp2418/AtlasForge/actions/runs/38458755032",
-    "verified_commit": "2801d9604ca130832473d28d56fb35ad05ad182f"
+    "run_url": "https://github.com/pranavp2418/AtlasForge/actions/runs/39089987332",
+    "verified_commit": "ba764289f0454aff26a45f107cb9460534ace7a8",
+    "jobs": [
+      "kernels",
+      "postgres-storage"
+    ]
   }
 }

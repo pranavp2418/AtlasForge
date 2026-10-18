@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-17",
   "user_supplied_skill_source": "User message October 13, 2026 plus prior verified/supplied profile",
   "policy": "Implementation evidence, planned work and existing unreviewed claims remain distinct. A badge/config/import does not establish use. No LinkedIn changes authorized by this file.",
   "skills": [
@@ -24,14 +24,29 @@
       "aliases": [
         "Integration Testing"
       ],
-      "status": "verified_local_core",
-      "project": "Both",
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
       "implementation_files": [
-        "tools/verify.py"
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
       ],
-      "verification": "python3 tools/verify.py",
-      "evidence_date": "2026-10-13",
-      "limits": "Initial kernel only; full product and hosted integration incomplete."
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "verified_local_core",
+          "project": "Both",
+          "implementation_files": [
+            "tools/verify.py"
+          ],
+          "verification": "python3 tools/verify.py",
+          "evidence_date": "2026-10-13",
+          "limits": "Initial kernel only; full product and hosted integration incomplete."
+        }
+      ]
     },
     {
       "skill": "Query optimization",
@@ -50,14 +65,29 @@
       "aliases": [
         "Financial Data Processin"
       ],
-      "status": "verified_local_core",
-      "project": "AsterLedger",
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
       "implementation_files": [
-        "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
       ],
-      "verification": "python3 tools/verify.py",
-      "evidence_date": "2026-10-13",
-      "limits": "Initial kernel only; full product and hosted integration incomplete."
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "verified_local_core",
+          "project": "AsterLedger",
+          "implementation_files": [
+            "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+          ],
+          "verification": "python3 tools/verify.py",
+          "evidence_date": "2026-10-13",
+          "limits": "Initial kernel only; full product and hosted integration incomplete."
+        }
+      ]
     },
     {
       "skill": "Relational databases / SQL",
@@ -66,12 +96,27 @@
         "dATABASES",
         "SQL"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
+      "implementation_files": [
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
+      ],
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "planned_or_prior_evidence_not_audited",
+          "project": null,
+          "implementation_files": [],
+          "verification": null,
+          "evidence_date": null,
+          "limits": "Do not claim until the real capability/integration has been verified."
+        }
+      ]
     },
     {
       "skill": "Infrastructure",
@@ -308,12 +353,27 @@
       "aliases": [
         "Docker"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
+      "implementation_files": [
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
+      ],
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "planned_or_prior_evidence_not_audited",
+          "project": null,
+          "implementation_files": [],
+          "verification": null,
+          "evidence_date": null,
+          "limits": "Do not claim until the real capability/integration has been verified."
+        }
+      ]
     },
     {
       "skill": "AWS Lambda",
@@ -528,42 +588,87 @@
       "aliases": [
         "C"
       ],
-      "status": "verified_local_core",
-      "project": "ForgePulse",
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
       "implementation_files": [
-        "forgepulse/native/crc32.c"
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
       ],
-      "verification": "python3 tools/verify.py",
-      "evidence_date": "2026-10-13",
-      "limits": "Initial kernel only; full product and hosted integration incomplete."
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "verified_local_core",
+          "project": "ForgePulse",
+          "implementation_files": [
+            "forgepulse/native/crc32.c"
+          ],
+          "verification": "python3 tools/verify.py",
+          "evidence_date": "2026-10-13",
+          "limits": "Initial kernel only; full product and hosted integration incomplete."
+        }
+      ]
     },
     {
       "skill": "C++",
       "aliases": [
         "C++"
       ],
-      "status": "verified_local_core",
-      "project": "ForgePulse",
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
       "implementation_files": [
-        "forgepulse/native/telemetry.cpp"
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
       ],
-      "verification": "python3 tools/verify.py",
-      "evidence_date": "2026-10-13",
-      "limits": "Initial kernel only; full product and hosted integration incomplete."
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "verified_local_core",
+          "project": "ForgePulse",
+          "implementation_files": [
+            "forgepulse/native/telemetry.cpp"
+          ],
+          "verification": "python3 tools/verify.py",
+          "evidence_date": "2026-10-13",
+          "limits": "Initial kernel only; full product and hosted integration incomplete."
+        }
+      ]
     },
     {
       "skill": "Java",
       "aliases": [
         "Java"
       ],
-      "status": "verified_local_core",
-      "project": "AsterLedger",
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
       "implementation_files": [
-        "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
       ],
-      "verification": "python3 tools/verify.py",
-      "evidence_date": "2026-10-13",
-      "limits": "Initial kernel only; full product and hosted integration incomplete."
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "verified_local_core",
+          "project": "AsterLedger",
+          "implementation_files": [
+            "asterledger/core/src/io/atlasforge/ledger/LedgerEngine.java"
+          ],
+          "verification": "python3 tools/verify.py",
+          "evidence_date": "2026-10-13",
+          "limits": "Initial kernel only; full product and hosted integration incomplete."
+        }
+      ]
     },
     {
       "skill": "TypeScript",
@@ -594,12 +699,27 @@
       "aliases": [
         "earlier verified profile"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
+      "implementation_files": [
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
+      ],
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "planned_or_prior_evidence_not_audited",
+          "project": null,
+          "implementation_files": [],
+          "verification": null,
+          "evidence_date": null,
+          "limits": "Do not claim until the real capability/integration has been verified."
+        }
+      ]
     },
     {
       "skill": "C# / ASP.NET Core / EF Core",
@@ -630,12 +750,27 @@
       "aliases": [
         "current primary hiring evidence"
       ],
-      "status": "planned_or_prior_evidence_not_audited",
-      "project": null,
-      "implementation_files": [],
-      "verification": null,
-      "evidence_date": null,
-      "limits": "Do not claim until the real capability/integration has been verified."
+      "status": "verified_local_and_ci_storage_slice",
+      "project": "AsterLedger / ForgePulse",
+      "implementation_files": [
+        "asterledger/storage/src/io/atlasforge/ledger/PostgresLedger.java",
+        "forgepulse/service/storage.py",
+        "forgepulse/native/decode_cli.cpp",
+        "tools/verify_storage.py"
+      ],
+      "verification": "runs/evidence/storage-2026-10-17.txt and CI 39089987332",
+      "evidence_date": "2026-10-17",
+      "limits": "Real local PostgreSQL17 container, JDBC/kernel and native-decoder/Python storage verified; no auth/API/Kubernetes/AWS/hosted service or SQL optimization claim.",
+      "evidence_history": [
+        {
+          "status": "planned_or_prior_evidence_not_audited",
+          "project": null,
+          "implementation_files": [],
+          "verification": null,
+          "evidence_date": null,
+          "limits": "Do not claim until the real capability/integration has been verified."
+        }
+      ]
     },
     {
       "skill": "OpenTelemetry / observability",
